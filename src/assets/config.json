@@ -1,0 +1,21 @@
+{
+  "applicationInsights": {
+    "instrumentationKey": "bd2db5fd-d79e-4b13-9341-c168964b5295",
+    "isEnabled": false
+  },
+  "navigation" :{
+    "postAuthCallbackRoute": "/post-auth-callback"
+  },
+  "oidcClient": {
+    "authority": "https://demo.identityserver.io/",
+    "clientId": "interactive.public",
+    "redirectUri": "https://localhost:4201/auth-callback",
+    "postLogoutRedirectUri": "https://localhost:4201/",
+    "responseType": "code",
+    "scope": "openid profile email api offline_access",
+    "filterProtocolClaims": true,
+    "loadUserInfo": true,
+    "automaticSilentRenew": true,
+    "includeIdTokenInSilentRenew": true
+  }
+}
