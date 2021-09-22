@@ -1,0 +1,21 @@
+{
+  "applicationInsights": {
+    "instrumentationKey": "bd2db5fd-d79e-4b13-9341-c168964b5295",
+    "isEnabled": false
+  },
+  "navigation" :{
+    "postAuthCallbackRoute": "/security/post-auth-callback"
+  },
+  "oidcClient": {
+    "authority": "https://app.dev-local.identity-service.io",
+    "clientId": "dev-local_uplink_cxl_pkce",
+    "redirectUri": "https://uplink.dev-local.employee-experience.io/compensation/auth-callback",
+    "postLogoutRedirectUri": "https://uplink.dev-local.employee-experience.io/compensation",
+    "responseType": "code",
+    "scope": "openid profile email",
+    "filterProtocolClaims": true,
+    "loadUserInfo": true,
+    "automaticSilentRenew": true,
+    "includeIdTokenInSilentRenew": true
+  }
+}
